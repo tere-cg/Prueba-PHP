@@ -1,0 +1,16 @@
+CREATE DATABASE cielonegro;
+
+use cielonegro;
+
+CREATE TABLE Producto (
+    ProductoID INT AUTO_INCREMENT PRIMARY KEY,
+    Tamano VARCHAR(50) NOT NULL,
+    Precio DECIMAL(10, 2) NOT NULL
+) ENGINE = InnoDB;
+
+CREATE TABLE Promocion (
+    PromocionID INT AUTO_INCREMENT PRIMARY KEY,
+    AplicaPromocion BOOLEAN NOT NULL,
+    CantGalletasRegaladas INT,
+    CantPaquetesRegaladaos INT
+);
